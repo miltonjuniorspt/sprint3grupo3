@@ -283,6 +283,16 @@ input, select, textarea {
 		box-sizing: border-box;
 		align-items: stretch;
 	}
+	.error {
+			color: red;
+			display: none; /* Inicialmente oculta a mensagem de erro */
+		  }
+		
+		  input:invalid + .error {
+			display: block; /* Mostra a mensagem de erro quando o campo é inválido */
+	}
+
+	
 
 		.row > * {
 			box-sizing: border-box;
@@ -1501,7 +1511,7 @@ input, select, textarea {
 /* Form */
 
 	form label {
-		color: #3e3e3e;
+		color:white;
 		font-weight: 700;
 		display: block;
 		margin: 0 0 0.5em 0;
@@ -1524,7 +1534,7 @@ input, select, textarea {
 		border-radius: 8px;
 		border: solid 1px #ddd;
 		background: #fff;
-		color: #bbb;
+		color:white;
 		box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025);
 		width: 100%;
 	}
@@ -1534,7 +1544,7 @@ input, select, textarea {
 		form input[type=password]:focus,
 		form select:focus,
 		form textarea:focus {
-			background: #fafafa;
+			background:#f4f4f4;
 			box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025), inset 0px 0px 2px 1px #43bff0;
 		}
 
@@ -1545,6 +1555,8 @@ input, select, textarea {
 	form .actions:last-child {
 		margin-bottom: 0;
 	}
+
+	
 
 	form ::-webkit-input-placeholder {
 		color: #555 !important;
