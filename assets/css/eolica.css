@@ -43,20 +43,20 @@ p {
 
 
 .gallery > img {
-     width: 30%;
+     width: 50%;
      align-items: center;
      margin: 10px;
 }
 
 .imag0 > img {
-    width: 30%;
+    width: 50%;
     align-items: center;
     margin: 10px;
 
 }
 
 div > p {
-    width: 40%;
+    width: 20%;
 
 }
 
