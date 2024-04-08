@@ -40,3 +40,19 @@ p {
     text-align:justify;
     margin: 10px 0;
 }
+
+
+.gallery > img {
+     width: 80%;
+     border-radius: 0.5rem;
+     align-items: center;
+     margin: 10px;
+}
+
+.imag0 > img {
+    width: 80%;
+     border-radius: 0.5rem;
+     align-items: center;
+     margin: 10px;
+
+}
