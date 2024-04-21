@@ -209,5 +209,41 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			<script>
+				// Manipulação do DOM via JavaScript
+				document.addEventListener('DOMContentLoaded', function () {
+					const contactForm = document.getElementById('contact-form');
+					contactForm.addEventListener('submit', function (event) {
+						event.preventDefault();
+						alert('Mensagem enviada com sucesso!');
+					});
+				});
+		
+				// Validação de formulário
+				document.addEventListener('DOMContentLoaded', function () {
+					const emailInput = document.getElementById('email');
+					const emailError = document.getElementById('email-error');
+		
+					emailInput.addEventListener('blur', function () {
+						if (!isValidEmail(emailInput.value)) {
+							emailError.style.display = 'block';
+						} else {
+							emailError.style.display = 'none';
+						}
+					});
+		
+					function isValidEmail(email) {
+						return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+					}
+				});
+		
+				// Renderização dinâmica de elementos
+				document.addEventListener('DOMContentLoaded', function () {
+					const workSection = document.getElementById('work');
+					const newElement = document.createElement('div');
+					newElement.innerHTML = '<h3>Novo Elemento</h3><p>Este é um novo elemento adicionado dinamicamente.</p>';
+					workSection.appendChild(newElement);
+				});
+			</script>
 	</body>
 </html>
