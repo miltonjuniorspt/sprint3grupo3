@@ -2445,6 +2445,14 @@ input, select, textarea {
 
 					#copyright li:first-child {
 						margin-top: 0;
+		
+		
 					}
+					#email {
+						border: none;
+						background: #282828;
+					}
+
+
 
 	}
