@@ -2447,12 +2447,13 @@ input, select, textarea {
 						margin-top: 0;
 		
 		
-					}
-					#email {
-						border: none;
-						background: #282828;
-					}
-
-
+			
 
 	}
+
+	
+}
+#email {
+	border: none;
+	background: #282828;
+}
